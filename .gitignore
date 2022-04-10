@@ -7,6 +7,7 @@
 # Except R files
 !*.R
 !*.Rd
+!*.html
 !*.bib
 !*.md
 !*.Rmd
