@@ -22,8 +22,8 @@ devtools::load_all()
 ### Do consistent trends mean the sum is greater than its parts?
 
 ```{r, fig.width=8, dev = "svglite"}
-tibble::tibble(x = paste("Outcome:",1:5),
-           y = c(-2, -3, -1, 1,-1.5),
+tibble::tibble(x = paste("Outcome:",1:4),
+           y = c(-2, -3, 1,-1.5),
            lwr = y-3,
            upr = y+3) %>%
   ggplot2::ggplot(ggplot2::aes(x = x, y = y, ymin = lwr, ymax = upr)) +
@@ -37,7 +37,7 @@ tibble::tibble(x = paste("Outcome:",1:5),
 
 ------------------------------------------------------------------------
 
-When conducting comparative effectiveness research we often need compare treatments across multiple outcomes. We usually aren't powered for comparisons of any particular outcome, and it is easy to be tempted to look at comparisons globally. It seems reasonable to conclude that if differences across outcomes consistently favour one treatment over another, that this whole may be greater than the sum of its parts. I wondered if this was a safe assumption when outcomes/treatment effects are correlated as is often the case in these settings
+When conducting comparative effectiveness research we often need to compare treatments across multiple outcomes. We usually aren't powered for comparisons of any particular outcome, and it is easy to be tempted to look at comparisons globally. It seems reasonable to conclude that if differences across outcomes consistently favour one treatment over another, that this whole may be greater than the sum of its parts. I wondered if this was a safe assumption when outcomes/treatment effects are correlated as is often the case in these settings
 
 ### Correlated outcomes, correlated p-values
 
