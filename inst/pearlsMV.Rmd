@@ -5,7 +5,6 @@ output:
     storyboard: true
     theme: readable
     css: "style.css"
-    logo: www/Eversana_Logo_H_RGB.png
     social: menu
     source: embed
 editor_options: 

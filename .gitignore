@@ -18,6 +18,9 @@
 !*.Rbuildignore
 !*renv.lock
 
+# For these projects, limited number of small image files
+!*.svg
+!*.png
 
 # Even if they are in sub-directories
 !*/
